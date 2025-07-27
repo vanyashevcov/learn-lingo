@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Modal from "react-modal";
 import { useForm } from "react-hook-form";
 import { signInWithEmailAndPassword } from "firebase/auth";
@@ -17,6 +17,19 @@ const LoginModal = ({ isOpen, onRequestClose }) => {
     formState: { errors },
     reset,
   } = useForm({ resolver: yupResolver(loginSchema) });
+
+  const [show, setShow] = useState(isOpen);
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      setShow(true);
+      setTimeout(() => setAnimate(true), 10);
+    } else if (show) {
+      setAnimate(false);
+      setTimeout(() => setShow(false), 300);
+    }
+  }, [isOpen]);
 
   useEffect(() => {
     if (isOpen) {
@@ -46,14 +59,16 @@ const LoginModal = ({ isOpen, onRequestClose }) => {
     }
   };
 
+  if (!show) return null;
+
   return (
     <>
       <ThemeToggle />
       <Modal
-        isOpen={isOpen}
+        isOpen={true}
         onRequestClose={onRequestClose}
-        className={css.modal}
-        overlayClassName={css.overlay}
+        className={`${css.modal} ${animate ? css["modal--open"] : css["modal--closed"]}`}
+        overlayClassName={`${css.overlay} ${animate ? css["overlay--open"] : css["overlay--closed"]}`}
       >
         <div className={css.container}>
           <button onClick={onRequestClose} className={css.close}>

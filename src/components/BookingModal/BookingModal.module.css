@@ -7,6 +7,18 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 300ms cubic-bezier(0.4,0,0.2,1), transform 300ms cubic-bezier(0.4,0,0.2,1);
+}
+.modal--open {
+  opacity: 1;
+  transform: scale(1);
+}
+.modal--closed {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.95);
 }
 
 .scrollWrapper {
@@ -25,6 +37,15 @@
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.4);
   inset: 0;
+  opacity: 0;
+  transition: opacity 300ms cubic-bezier(0.4,0,0.2,1);
+}
+.overlay--open {
+  opacity: 1;
+}
+.overlay--closed {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .content {

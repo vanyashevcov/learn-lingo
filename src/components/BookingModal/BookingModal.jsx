@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import css from "./BookingModal.module.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import ThemeToggle from "../../components/ThemeToggle/ThemeToggle";
 import Icon from "../Icons/Icon";
@@ -39,6 +39,19 @@ const BookingModal = ({ isOpen, onRequestClose, teacher }) => {
     resolver: yupResolver(schema),
   });
 
+  const [show, setShow] = useState(isOpen);
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      setShow(true);
+      setTimeout(() => setAnimate(true), 10);
+    } else if (show) {
+      setAnimate(false);
+      setTimeout(() => setShow(false), 300);
+    }
+  }, [isOpen]);
+
   useEffect(() => {
     if (isOpen) {
       document.documentElement.classList.add("noScroll");
@@ -55,14 +68,16 @@ const BookingModal = ({ isOpen, onRequestClose, teacher }) => {
     onRequestClose();
   };
 
+  if (!show) return null;
+
   return (
     <>
       <ThemeToggle />
       <Modal
-        isOpen={isOpen}
+        isOpen={true}
         onRequestClose={onRequestClose}
-        className={css.modal}
-        overlayClassName={css.overlay}
+        className={`${css.modal} ${animate ? css["modal--open"] : css["modal--closed"]}`}
+        overlayClassName={`${css.overlay} ${animate ? css["overlay--open"] : css["overlay--closed"]}`}
       >
         <button className={css.closeBtn} onClick={onRequestClose}>
           <Icon
