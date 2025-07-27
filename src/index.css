@@ -1,2 +1,6 @@
 @import url("./css/base.css");
 @import url("./css/reset.css");
+
+.noScroll {
+  overflow: hidden !important;
+}
