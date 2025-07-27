@@ -20,6 +20,7 @@ const RegisterModal = ({ isOpen, onRequestClose }) => {
 
   const [show, setShow] = useState(isOpen);
   const [animate, setAnimate] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   useEffect(() => {
     if (isOpen) {
@@ -111,12 +112,29 @@ const RegisterModal = ({ isOpen, onRequestClose }) => {
               <p className={css.error}>{errors.email.message}</p>
             )}
 
-            <input
-              className={`${css.input} ${css.inputPassword}`}
-              type="password"
-              placeholder="Password"
-              {...register("password")}
-            />
+            <div className={css.inputPasswordWrapper}>
+              <input
+                className={`${css.input} ${css.inputPassword}`}
+                type={showPassword ? "text" : "password"}
+                placeholder="Password"
+                {...register("password")}
+              />
+              <button
+                type="button"
+                className={css.eyeButton}
+                onClick={() => setShowPassword((v) => !v)}
+                tabIndex={-1}
+                aria-label={showPassword ? "Hide password" : "Show password"}
+              >
+                <Icon
+                  name="eye-off"
+                  width={20}
+                  height={20}
+                  fill="transparent"
+                  stroke="var(--color-text)"
+                />
+              </button>
+            </div>
             {errors.password && (
               <p className={css.error}>{errors.password.message}</p>
             )}

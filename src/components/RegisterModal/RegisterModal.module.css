@@ -91,8 +91,25 @@
   margin-bottom: 18px;
 }
 
-.inputPassword {
-  margin-bottom: 40px;
+.inputPasswordWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.eyeButton {
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+  background-color: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .error {
@@ -103,6 +120,7 @@
 }
 
 .button {
+  margin-top: 40px;
   width: 100%;
   border-radius: 12px;
   padding: 16px;
