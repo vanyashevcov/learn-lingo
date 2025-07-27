@@ -59,10 +59,19 @@
 
 .language {
   color: var(--color-text);
-  transition: transform var(--animation);
+  transition: transform 250ms ease-in-out;
 }
 
 .languageUp {
+  transform: rotate(180deg);
+}
+
+.chevron {
+  color: var(--color-text);
+  transition: transform 250ms ease-in-out;
+}
+
+.chevronUp {
   transform: rotate(180deg);
 }
 
@@ -76,6 +85,22 @@
   z-index: 1000;
   margin-top: 4px;
   padding: 14px 18px;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dropdownList--open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdownList--closed {
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
 }
 
 .dropdownItem {
@@ -86,7 +111,7 @@
   cursor: pointer;
   font-size: 16px;
   color: var(--color-text-light);
-  transition: all var(--animation);
+  transition: transform 250ms ease-in-out;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.11;
