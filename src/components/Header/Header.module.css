@@ -1,0 +1,90 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1184px;
+  padding: 20px 0;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  width: 28px;
+  height: 28px;
+}
+
+.logoTitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.navContainer a {
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--color-text);
+  transition: color 250ms ease-in-out;
+}
+
+.navContainer a:hover,
+.navContainer a:focus {
+  color: var(--color-primary);
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logInBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--color-text);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color 250ms ease-in-out;
+}
+
+.logInBtn:hover,
+.logInBtn:focus {
+  color: var(--color-primary);
+}
+
+.registerBtn, .logoutBtn {
+  padding: 14px 39px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--color-white);
+  background-color: var(--color-text);
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+  border: none;
+}
+
+.registerBtn:hover,
+.registerBtn:focus, 
+.logoutBtn:hover,
+.logoutBtn:focus {
+  color: var(--color-text);
+  background-color: var(--color-primary);
+}

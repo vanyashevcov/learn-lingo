@@ -1,0 +1,46 @@
+.teachersSection {
+  background-color: var(--color-light-gray);
+  padding: 32px 0 96px 0;
+}
+
+.teacherContainer {
+  max-width: 1184px;
+  margin: 0 auto;
+}
+
+.teacherList {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.loadMoreContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+
+}
+
+.loadMoreButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  width: 183px;
+  height: 60px;
+  background-color: var(--color-primary);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--color-text);
+  transition: background-color 250ms ease-in-out;
+}
+
+.loadMoreButton:hover,
+.loadMoreButton:focus {
+  background-color: var(--color-primary-light);
+}

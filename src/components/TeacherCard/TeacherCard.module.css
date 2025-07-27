@@ -1,0 +1,285 @@
+.teacherListItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+  padding: 24px;
+  width: 1184px;
+  background-color: var(--color-white);
+  border-radius: 24px;
+}
+
+.teacherImageContainer {
+  position: relative;
+  flex-shrink: 0;
+  border: 3px solid var(--color-primary-light);
+  border-radius: 100px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teacherImage {
+  border-radius: 100px;
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+}
+
+.isOnlineImage {
+  position: absolute;
+  top: 15px;
+  right: 19px;
+}
+
+.teacherContent {
+  width: 100%;
+}
+
+.teacherHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.teacherInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.languagesLabel {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+.teacherName {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.statsContainer {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+.languagesInfo {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.statItem:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  height: 16px;
+  width: 1px;
+  background-color: rgba(18, 20, 23, 0.2);
+  margin-left: 16px;
+}
+
+.statItem p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+.priceText {
+  color: var(--color-green);
+}
+
+.favoriteButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.infoContainer {
+  margin-bottom: 16px;
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.infoRow {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text-light);
+}
+
+.infoRowText {
+  color: var(--color-text);
+}
+
+.readMoreBtn {
+  display: inline-block;
+  font-family: var(--font-primary);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  background-color: transparent;
+  border: none;
+  color: var(--color-text);
+  transition: color 250ms ease-in-out;
+}
+
+.readMoreBtn:hover,
+.readMoreBtn:focus {
+  color: var(--color-primary);
+}
+
+.detailsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.experienceText {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+.reviewsSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewsList {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.reviewItem {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.reviewerInformation {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.reviewerImage {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+}
+
+.reviewerImagePlaceholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.reviewerDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.reviewerName {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text-light);
+}
+
+.ratingBlock {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ratingText {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--color-text);
+}
+
+.reviewComment {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+.levelLangContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.levelLang {
+  border-radius: 35px;
+  padding: 8px 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--color-text);
+  background-color: var(--color-primary);
+  border: none;
+}
+
+.levelLangContainer > *:not(:first-child) {
+  background-color: transparent;
+  border: 1px solid rgba(18, 20, 23, 0.2);
+}
+
+.bookTrialBtn {
+  border-radius: 12px;
+  padding: 16px 48px;
+  background: var(--color-primary);
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.55556;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+  align-self: flex-start;
+}
+
+.bookTrialBtn:hover,
+.bookTrialBtn:focus {
+  background: var(--color-primary-light);
+
+}

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <symbol id="icon-star" viewBox="0 0 32 32">
+      <path stroke-width="2.4" d="M19.6 9.395a2.201 2.201 0 0 0 1.57 1.141l7.6 1.313-5.375 5.535a2.2 2.2 0 0 0-.6 1.846l1.098 7.635-6.922-3.402-.234-.1a2.203 2.203 0 0 0-1.473 0l-.234.1-6.924 3.402 1.1-7.635a2.2 2.2 0 0 0-.6-1.846l-5.377-5.535 7.602-1.313a2.198 2.198 0 0 0 1.57-1.141l3.6-6.822 3.6 6.822z"/>
+    </symbol>
+    <symbol id="icon-online" viewBox="0 0 32 32">
+      <path fill="#fff" d="M32 16c0 8.837-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0s16 7.163 16 16z" style="fill:var(--color1, #fff)"/>
+      <path fill="#38cd3e" d="M26.667 16c0 5.891-4.776 10.667-10.667 10.667S5.333 21.891 5.333 16 10.109 5.333 16 5.333 26.667 10.109 26.667 16z" style="fill:var(--color2, #38cd3e)"/>
+    </symbol>
+    <symbol id="icon-book" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M29.333 8.267c0-1.493 0-2.24-.291-2.811a2.666 2.666 0 0 0-1.165-1.165C27.306 4 26.56 4 25.066 4h-.533c-2.987 0-4.48 0-5.621.581a5.331 5.331 0 0 0-2.331 2.331C16 8.053 16 9.546 16 12.533V28l.133-.2c.926-1.389 1.389-2.084 2.001-2.587a5.345 5.345 0 0 1 1.837-.983c.758-.23 1.593-.23 3.262-.23h1.833c1.494 0 2.24 0 2.811-.291.502-.256.91-.664 1.165-1.165.291-.57.291-1.317.291-2.811V8.266zM2.667 8.267c0-1.493 0-2.24.291-2.811.256-.502.664-.91 1.165-1.165C4.693 4 5.44 4 6.934 4h.533c2.987 0 4.48 0 5.621.581a5.331 5.331 0 0 1 2.331 2.331C16 8.053 16 9.546 16 12.533V28l-.133-.2c-.926-1.389-1.389-2.084-2.001-2.587a5.345 5.345 0 0 0-1.837-.983C11.271 24 10.436 24 8.767 24H6.934c-1.493 0-2.24 0-2.811-.291a2.666 2.666 0 0 1-1.165-1.165c-.291-.57-.291-1.317-.291-2.811V8.266z"/>
+    </symbol>
+    <symbol id="icon-heard" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.462" d="M27.787 6.147a7.326 7.326 0 0 0-10.373 0L16.001 7.56l-1.413-1.413a7.333 7.333 0 0 0-10.374 0 7.333 7.333 0 0 0 0 10.374l11.787 11.787 11.787-11.787a7.326 7.326 0 0 0 0-10.373z"/>
+    </symbol>
+    <symbol id="icon-arrow-down" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3.2" d="m8 12 8 8 8-8"/>
+    </symbol>
+    <symbol id="icon-eye-off" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3.2" d="M23.92 23.92A13.43 13.43 0 0 1 16 26.667C6.667 26.667 1.333 16 1.333 16A24.605 24.605 0 0 1 8.08 8.08m5.12-2.427a12.161 12.161 0 0 1 2.8-.32C25.333 5.333 30.667 16 30.667 16a24.646 24.646 0 0 1-2.88 4.253m-8.96-1.426a4.003 4.003 0 0 1-5.755.102 3.994 3.994 0 0 1-.824-4.456 4.01 4.01 0 0 1 .927-1.298M1.333 1.333l29.333 29.333"/>
+    </symbol>
+    <symbol id="icon-close-btn" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M24 8 8 24M8 8l16 16"/>
+    </symbol>
+    <symbol id="icon-log-in" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3.2" d="M20 4h1.6c2.24 0 3.36 0 4.216.436a3.996 3.996 0 0 1 1.748 1.748C28 7.04 28 8.16 28 10.4v11.2c0 2.24 0 3.36-.436 4.216a4.001 4.001 0 0 1-1.748 1.748C24.96 28 23.84 28 21.6 28H20M13.333 9.333 20 16m0 0-6.667 6.667M20 16H4"/>
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3.2" d="M8 16l5.333 5.333L24 10.667"/>
+    </symbol>
+    <symbol id="icon-dollar" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3.2" d="M16 2.667v26.666M20 8.667c0-2.667-1.333-4-4-4s-4 1.333-4 4 1.333 4 4 4 4 1.333 4 4-1.333 4-4 4-4 1.333-4 4"/>
+    </symbol>
+    <symbol id="icon-heart" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.462" d="M27.787 6.147a7.326 7.326 0 0 0-10.373 0L16.001 7.56l-1.413-1.413a7.333 7.333 0 0 0-10.374 0 7.333 7.333 0 0 0 0 10.374l11.787 11.787 11.787-11.787a7.326 7.326 0 0 0 0-10.373z"/>
+    </symbol>
+    <symbol id="icon-heart-filled" viewBox="0 0 32 32">
+      <path fill="currentColor" d="M27.787 6.147a7.326 7.326 0 0 0-10.373 0L16.001 7.56l-1.413-1.413a7.333 7.333 0 0 0-10.374 0 7.333 7.333 0 0 0 0 10.374l11.787 11.787 11.787-11.787a7.326 7.326 0 0 0 0-10.373z"/>
+    </symbol>
+  </defs>
+</svg>

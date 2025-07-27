@@ -1,0 +1,12 @@
+.notFoundPageSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 88px);
+}
+
+.gifNotFound {
+  border-radius: 5%;
+  width: 600px;
+  height: 400px;
+}

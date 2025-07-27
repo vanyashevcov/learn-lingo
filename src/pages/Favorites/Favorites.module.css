@@ -1,0 +1,18 @@
+.favoritesSection {
+  padding: 32px 0;
+  background-color: var(--color-light-gray);
+  height: calc(100dvh - 88px);
+}
+
+.teacherList {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.emptyMessage {
+  text-align: center;
+  font-size: 18px;
+}

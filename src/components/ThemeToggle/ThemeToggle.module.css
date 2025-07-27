@@ -1,0 +1,42 @@
+.toggle {
+  position: fixed;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  background: transparent;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.colorCircle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.colorCircle.active {
+  box-shadow: 0 0 0 3px var(--color-primary, #F4C550);
+  transform: scale(1.1);
+}
+
+[data-theme="dark"] .toggle {
+  background: var(--color-primary-blue);
+  color: #fff;
+}
+
+.toggle:focus {
+  outline: 2px solid var(--color-primary-green);
+} 

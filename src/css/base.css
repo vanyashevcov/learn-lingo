@@ -1,0 +1,40 @@
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --color-primary-yellow: #F4C550;
+  --color-primary-yellow-light: #FBE9BA;
+  --color-primary-green: #9FBAAE;
+  --color-primary-green-light: #CBDED3;
+  --color-primary-blue: #9FB7CE;
+  --color-primary-blue-light: #BFD6EA;
+  --color-primary-red: #E0A39A;
+  --color-primary-red-light: #F2C0BD;
+  --color-primary-peach: #F0AA8D;
+  --color-primary-peach-light: #F4C8BA;
+  --color-primary: var(--color-primary-yellow);
+  --color-green: #38CD3E;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-text: #121417;
+  --color-text-light: #8A8A89;
+  --color-star: #FFC531;
+  --color-light-gray: #F8F8F8;
+}
+
+
+body {
+  margin: 0;
+  position: relative;
+  font-family: var(--primary-font);
+  background-color: var(--color-white);
+}
+
+textarea:focus,
+select:focus,
+input:focus {
+  outline: 0;
+}
+
+.container {
+  max-width: 1312px;
+  margin: 0 auto;
+}
