@@ -66,9 +66,7 @@ const FilterBar = ({ onFilterChange }) => {
           >
             <span className={css.selectedValue}>{selectedLanguage}</span>
             <svg
-              className={`${css.language} ${
-                isLanguagesOpen ? css.languageUp : ""
-              }`}
+              className={`${css.language} ${isLanguagesOpen ? css.languageUp : ""}`}
               width="20"
               height="20"
               fill="none"
@@ -77,22 +75,23 @@ const FilterBar = ({ onFilterChange }) => {
               <use href="/sprite.svg#icon-arrow-down"></use>
             </svg>
           </button>
-          {isLanguagesOpen && (
-            <ul className={css.dropdownList}>
-              {languages.map((language) => (
-                <li key={language}>
-                  <button
-                    className={`${css.dropdownItem} ${
-                      selectedLanguage === language ? css.selected : ""
-                    }`}
-                    onClick={() => handleLanguageSelect(language)}
-                  >
-                    {language}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          )}
+          <ul
+            className={
+              `${css.dropdownList} ` +
+              (isLanguagesOpen ? css['dropdownList--open'] : css['dropdownList--closed'])
+            }
+          >
+            {languages.map((language) => (
+              <li key={language}>
+                <button
+                  className={`${css.dropdownItem} ${selectedLanguage === language ? css.selected : ""}`}
+                  onClick={() => handleLanguageSelect(language)}
+                >
+                  {language}
+                </button>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 
@@ -114,22 +113,23 @@ const FilterBar = ({ onFilterChange }) => {
               <use href="/sprite.svg#icon-arrow-down"></use>
             </svg>
           </button>
-          {isLevelOpen && (
-            <ul className={css.dropdownList}>
-              {levels.map((level) => (
-                <li key={level}>
-                  <button
-                    className={`${css.dropdownItem} ${
-                      selectedLevel === level ? css.selected : ""
-                    }`}
-                    onClick={() => handleLevelSelect(level)}
-                  >
-                    {level}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          )}
+          <ul
+            className={
+              `${css.dropdownList} ` +
+              (isLevelOpen ? css['dropdownList--open'] : css['dropdownList--closed'])
+            }
+          >
+            {levels.map((level) => (
+              <li key={level}>
+                <button
+                  className={`${css.dropdownItem} ${selectedLevel === level ? css.selected : ""}`}
+                  onClick={() => handleLevelSelect(level)}
+                >
+                  {level}
+                </button>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 
@@ -151,22 +151,23 @@ const FilterBar = ({ onFilterChange }) => {
               <use href="/sprite.svg#icon-arrow-down"></use>
             </svg>
           </button>
-          {isPriceOpen && (
-            <ul className={css.dropdownList}>
-              {prices.map((price) => (
-                <li key={price}>
-                  <button
-                    className={`${css.dropdownItem} ${
-                      selectedPrice === price + " $" ? css.selected : ""
-                    }`}
-                    onClick={() => handlePriceSelect(price)}
-                  >
-                    {price}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          )}
+          <ul
+            className={
+              `${css.dropdownList} ` +
+              (isPriceOpen ? css['dropdownList--open'] : css['dropdownList--closed'])
+            }
+          >
+            {prices.map((price) => (
+              <li key={price}>
+                <button
+                  className={`${css.dropdownItem} ${selectedPrice === price + " $" ? css.selected : ""}`}
+                  onClick={() => handlePriceSelect(price)}
+                >
+                  {price}
+                </button>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>
