@@ -39,6 +39,17 @@ const BookingModal = ({ isOpen, onRequestClose, teacher }) => {
     resolver: yupResolver(schema),
   });
 
+  useEffect(() => {
+    if (isOpen) {
+      document.documentElement.classList.add("noScroll");
+    } else {
+      document.documentElement.classList.remove("noScroll");
+    }
+    return () => {
+      document.documentElement.classList.remove("noScroll");
+    };
+  }, [isOpen]);
+
   const onSubmit = (data) => {
     toast.success("Lesson request successfully sent!");
     onRequestClose();

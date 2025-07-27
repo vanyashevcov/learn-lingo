@@ -20,14 +20,14 @@ const RegisterModal = ({ isOpen, onRequestClose }) => {
 
   useEffect(() => {
     if (isOpen) {
-      document.documentElement.classList.add("noScroll");
+      document.body.classList.add("noScroll");
     } else {
-      document.documentElement.classList.remove("noScroll");
+      document.body.classList.remove("noScroll");
       reset();
     }
 
     return () => {
-      document.documentElement.classList.remove("noScroll");
+      document.body.classList.remove("noScroll");
     };
   }, [isOpen, reset]);
 
