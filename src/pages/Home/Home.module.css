@@ -92,9 +92,11 @@
 }
 
 .advantagesList {
+  max-width: 1312px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
   gap: 100px;
   padding: 40px 0;
   border: 1.5px dashed var(--color-primary);
